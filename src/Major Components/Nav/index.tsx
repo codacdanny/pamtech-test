@@ -10,10 +10,13 @@ import NavButton from "../../Minor Components/NavButton";
 
 const Nav = () => {
   return (
-    <Box height="100px" backgroundColor={colors.primaryColor} paddingY="1rem">
+    <Flex
+      alignItems="center"
+      height="100px"
+      backgroundColor={colors.primaryColor}>
       <Flex alignItems="center">
         <Box>
-          <Image src={logo} alt="logo" />
+          <Image src={logo} alt="logo" boxSize="fit-content" />
         </Box>
         <Flex>
           <NavButton imageUrl={home} title="Dashboard" href="#" />
@@ -45,7 +48,7 @@ const Nav = () => {
           </Button>
         </Box>
       </Flex>
-    </Box>
+    </Flex>
   );
 };
 
