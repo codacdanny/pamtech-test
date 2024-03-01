@@ -1,5 +1,6 @@
 import React from "react";
 import { Table, Thead, Tbody, Tr, Th, Td, TableProps } from "@chakra-ui/react";
+import { colors } from "../../Variables/variables";
 
 // Define the data type for the table rows
 type TableRowData = {
@@ -17,7 +18,7 @@ const TableRow: React.FC<TableRowData> = ({
   status,
 }) => {
   return (
-    <Tr>
+    <Tr backgroundColor="#fff" color={colors.campaignTextColor}>
       <Td>{title}</Td>
       <Td>{description}</Td>
       <Td>{target}</Td>
@@ -27,36 +28,10 @@ const TableRow: React.FC<TableRowData> = ({
 };
 
 // Define a custom component for the table
-const CustomTable: React.FC<TableProps> = (props) => {
-  // Define some dummy data for the table rows
-  const data: TableRowData[] = [
-    {
-      title: "Mobile app coming soon",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Diam phasellus ut nisl dol...",
-      target: "All customers",
-      status: "Active",
-    },
-    {
-      title: "Mobile app coming soon",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Diam phasellus ut nisl dol...",
-      target: "All customers",
-      status: "Active",
-    },
-    {
-      title: "Mobile app coming soon",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Diam phasellus ut nisl dol...",
-      target: "All customers",
-      status: "Active",
-    },
-    // Add more data items here
-  ];
-
+const CustomTable: React.FC<{ data: TableRowData[] }> = ({ data }) => {
   return (
-    <Table {...props}>
-      <Thead>
+    <Table>
+      <Thead border="3px solid #eee">
         <Tr>
           <Th>Campaign Title</Th>
           <Th>Description</Th>

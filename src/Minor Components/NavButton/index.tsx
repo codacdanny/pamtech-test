@@ -1,4 +1,4 @@
-import { Button, Flex, Icon, Image, Text } from "@chakra-ui/react";
+import { Button, Flex, Image, Text } from "@chakra-ui/react";
 import { colors } from "../../Variables/variables";
 
 interface NavButtonProps {

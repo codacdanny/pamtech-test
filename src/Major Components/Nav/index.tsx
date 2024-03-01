@@ -14,7 +14,7 @@ const Nav = () => {
       alignItems="center"
       height="100px"
       backgroundColor={colors.primaryColor}>
-      <Flex alignItems="center">
+      <Flex alignItems="center" maxW="1200px" margin="0 auto" gap="8rem">
         <Box>
           <Image src={logo} alt="logo" boxSize="fit-content" />
         </Box>

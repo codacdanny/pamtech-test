@@ -10,7 +10,7 @@ type Colors = {
 };
 export const colors: Colors = {
   primaryColor: "#FFFFFF",
-  bgColor: "#CCCFCE3D",
+  bgColor: "#f3f4f6",
   campaignTextColor: "#55605C",
   textColor: "#808785",
   headerColor: "#00100B",
