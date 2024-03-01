@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Link, Text } from "@chakra-ui/react";
 import { AiOutlineDown } from "react-icons/ai";
 import { colors } from "../../Variables/variables";
 import logo from "../../assets/logo.svg";
@@ -24,7 +24,7 @@ const Nav = () => {
           <NavButton imageUrl={customers} title="Customers" href="#" />
           <NavButton imageUrl={services} title="Services" href="#" />
         </Flex>
-        <Box>
+        <Link href="mailto:Buukmenow@gmail.com">
           <Button
             variant="ghost"
             colorScheme="transparent"
@@ -46,7 +46,7 @@ const Nav = () => {
               </Text>
             </Flex>
           </Button>
-        </Box>
+        </Link>
       </Flex>
     </Flex>
   );

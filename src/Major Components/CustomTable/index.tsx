@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Thead, Tbody, Tr, Th, Td, TableProps } from "@chakra-ui/react";
+import { Table, Thead, Tbody, Tr, Th, Td } from "@chakra-ui/react";
 import { colors } from "../../Variables/variables";
 
 // Define the data type for the table rows
@@ -27,7 +27,6 @@ const TableRow: React.FC<TableRowData> = ({
   );
 };
 
-// Define a custom component for the table
 const CustomTable: React.FC<{ data: TableRowData[] }> = ({ data }) => {
   return (
     <Table>
