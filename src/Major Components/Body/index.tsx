@@ -81,7 +81,7 @@ const Body = () => {
       minHeight="100svh"
       maxWidth="1200px"
       paddingY="2rem">
-      <Box borderBottom={` 2px solid #eee`}>
+      <Box borderBottom={` 2px solid #eee`} marginBottom="1rem">
         <Flex flexDirection="column" marginY="1.5rem" gap=".5rem">
           <Heading color={colors.headerColor} fontSize="1.5rem">
             Customers
